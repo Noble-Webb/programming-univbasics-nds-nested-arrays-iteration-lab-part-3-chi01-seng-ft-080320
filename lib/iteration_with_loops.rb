@@ -11,7 +11,7 @@ def join_nested_strings(src)
   
       if src[row_index][element_index][0].class ==  string_elements.class
         
-        outer_results << src[row_index][element_index]
+        outer_results << src[row_index][element_index] += " "
       end
       
       element_index += 1
