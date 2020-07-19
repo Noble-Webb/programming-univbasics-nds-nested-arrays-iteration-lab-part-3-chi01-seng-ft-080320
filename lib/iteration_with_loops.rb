@@ -11,13 +11,13 @@ def join_nested_strings(src)
   
       if src[row_index][element_index].class ==  string_elements.class
         
-        outer_results << src[row_index][element_index]
+        string_elements = src[row_index][element_index]
       end
       
       element_index += 1
     
     end
- 
+    outer_results << string_elements
     row_index += 1
   end
   outer_results
